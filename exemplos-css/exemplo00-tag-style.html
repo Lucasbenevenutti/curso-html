@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Não utilizar STYLE</title>
+    <style>
+        @font-face {
+            font-family: League;
+            src: url(assets/League.otf);
+
+        }
+
+        body {
+            background-color: darkblue;
+            /*Má pratica utilizar o nome da cor*/
+            /*rgb (0..255, 0..255, 0.255) Red Green Blue*/
+            background-color: rgb(0, 0, 139);
+            /* hexadecimal (#[0-9A-F])  #16opcoes{6} #16opcoes{3} */
+            background-color: #0008b0;
+        }
+
+        h1 {
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'League', 'Arial';
+        }
+
+        h1:hover {
+            /*borda esquerda amarela*/
+            color: #ff0000;
+            font-family: url();
+        }
+
+        img {
+            border-top-style: solid;
+            border-top-color: purple;
+            border-top-width: 5px;
+
+            border-right-color: rgb(0, 100, 0);
+            border-right-width: 8px;
+            border-right-style: dashed;
+
+            border-bottom-width: 10px;
+            border-bottom-color: rgb(201, 81, 101);
+            border-bottom-style: groove;
+
+            border-left-color: rgb(217, 217, 0);
+            border-left-width: 14px;
+            border-left-style: ridge;
+
+            opacity: 0.9;
+            transition: transform 1s;
+        }
+
+        img:hover{
+            opacity: 1;
+            transform: scaleX(0.8) scaleY(0.8);
+            transform: scale(0.8);
+
+
+        }
+
+
+        /* 
+        # é um seletor de ID
+        a # serve para selecionar elemento que contém o id
+        exemplo: <img id="banner" src="minha-imagem.jpg">
+        #banner 
+        */
+        p#primeiro{
+            color: #adff2f;
+        }
+        p#segundo{
+            color: #ff8c00;
+        }
+        p#terceiro{
+            color: #4169e1;
+        }
+        p#quarto{
+            color: #a9a9a9;
+        }
+        p#quinto{
+            color: #00ced1;
+        }
+
+
+
+        
+        
+    </style>
+
+
+</head>
+
+<body>
+    <h1>Motivo para não jogar lol</h1>
+
+    <p id="primeiro">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi ex nesciunt vitae, aspernatur odit natus
+        accusantium voluptates ipsum consequuntur ut deleniti eligendi ducimus laboriosam necessitatibus, optio quasi
+        porro veniam! Quisquam?</p>
+
+    <p id="segundo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus doloremque, a soluta consectetur velit
+        nobis accusantium et iure possimus illo excepturi qui molestias mollitia inventore rerum earum deleniti quas
+        voluptate.</p>
+
+    <p id="terceiro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quae sapiente fuga, ratione quo non error
+        laudantium voluptas expedita veritatis repellat maxime cumque eveniet, praesentium, eligendi quam atque
+        repudiandae distinctio.</p>
+
+    <p id="quarto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae adipisci hic repudiandae, cum, recusandae ex
+        blanditiis non, unde atque amet harum excepturi ducimus quidem. Dolorem fuga quibusdam culpa nam quaerat.</p>
+
+    <p id="quinto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis vero, nulla eaque natus dolor, ducimus
+        sint, aspernatur consequatur provident nihil rem porro reiciendis fugit doloribus ipsa praesentium sunt nam a?
+    </p>
+
+    <img src="https://picsum.photos/id/598/600/400" alt="">
+
+
+
+
+</body>
+
+</html>

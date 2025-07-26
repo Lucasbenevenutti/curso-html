@@ -1,0 +1,27 @@
+.pokemons{
+    display: flex; /*Ativa o flexbox*/
+
+    /*Flex direction define como será apresentado os elementos (linhas, colunas, linhas inversas, colunas-inversas)
+        -row: disposição horizontal (default "padrão")
+        -column: disposição vertical
+        -row-reverse: disposição horizontal invertida
+        -column-reverse: disposição vertical invertido*/    
+    flex-direction: row;
+    /*Flex wrap define se os itens devem "quebrar" para uma nova linha/coluna quando não houver espaço disponivel*/
+    flex-wrap:wrap;
+}
+
+.pokemon{
+    background-color: darkgray;
+    width: 300px;
+}
+
+.pokemon-nome{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.pokemon-foto{
+    width: 260px;
+}
+
